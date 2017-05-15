@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{Coleman97}
+Derek Coleman, Viktor Ohnjec, John Artim, Erick Rivas, Jim Rumbaugh, and
+  Rebecca Wirfs-Bracle.
+\newblock Uml (panel): The language of blueprints for software?
+\newblock {\em SIGPLAN Not.}, 32(10):201--205, October 1997.
+
+\bibitem{Gamma03}
+John~Vlissides Erich~Gamma, Richard Helm Ralph~Johnson.
+\newblock {\em Patrones de Diseño}.
+\newblock Addinson wesley, 2003.
+
+\bibitem{Fowler99}
+Martin Fowler.
+\newblock {\em UML gota a gota}.
+\newblock Pearson Educación, 1999.
+
+\bibitem{IEEE93}
+IEEE.
+\newblock Ieee standard 610.12-1990.
+\newblock Technical report, The institution that published, 1990.
+
+\bibitem{Rumbaugh00}
+I.~Jacobson J.~Rumbaugh and G.~Booch.
+\newblock {\em The title of the work}.
+\newblock El Lenguaje Unificado de Modelado – Manual de Referencia, S.A.
+  Madrid, 2000.
+
+\bibitem{McClure89}
+Carma McClure.
+\newblock The case experience.
+\newblock {\em BYTE}, 14(4):235--244, April 1989.
+
+\bibitem{ONGEI}
+ONGEI.
+\newblock Herramientas case.
+\newblock 2011.
+
+\bibitem{Pressman93}
+Roger~S. Pressman.
+\newblock {\em Ingeniería del Software: Un enfoque práctico, Editorial: McGraw
+  Hill España}.
+\newblock McGraw Hill España, 1993.
+
+\bibitem{Schmuller00}
+Joseph Schmuller.
+\newblock {\em Aprendiendo UML en 24 horas}.
+\newblock Prentice Hall, 2000.
+
+\bibitem{Stobart96}
+Simon Stobart.
+\newblock The case tool home.
+\newblock 1996.
+
+\bibitem{Terry90}
+B.~Terry and D.~Logee.
+\newblock Terminology for software engineering environment (see) and
+  computer-aided software engineering (case).
+\newblock {\em SIGSOFT Softw. Eng. Notes}, 15(2):83--94, April 1990.
+
+\bibitem{Wayne}
+K~Wayne.
+\newblock {Computer Aided Software Engineering (CASE)}.
+\newblock 1987.
+
+\end{thebibliography}

@@ -1,0 +1,180 @@
+\chapter{Marco Te\'orico}\label{chap:marcoteorico}
+\section{Herramientas CASE}
+
+La Ingeniería del software es la ciencia que ayuda a elaborar sistemas con el fin de que sea económico, fiable y funcione eficientemente sobre las máquinas reales \cite{Pressman93}. El uso de la Ingeniería del Software trae consigo algunas ventajas como: obtención de un nivel competitivo, mejora de la uniformidad de métodos, adaptación de la automatización del analista, cambio de métodos de trabajo, entre otros.
+
+La \ac{IEEE} define en 1990 a la Ingeniería del Software como: "La aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación (funcionamiento) y mantenimiento de software" \cite{IEEE93}.
+
+Dos definiciones de CASE formales son las siguientes:
+
+"Herramientas individuales para ayudar al desarrollador de software o administrador de proyectos durante una o más fases del desarrollo (o mantenimiento) del software" \cite{Terry90}.
+
+"Una combinación de herramientas de software y metodologías estructuradas de desarrollo" \cite{McClure89}.
+
+Luego entonces, la Ingeniería de Software Asistida por Computadora (CASE) tiene como objetivo proporcionar un conjunto de herramientas bien integradas y que ahorren trabajo, uniendo y automatizando todas o algunas de las fases del ciclo de vida del software, en otras palabras, CASE es una herramienta que ayuda a un ingeniero de software a desarrollar sistemas de cómputo.
+
+
+\subsection{Historia de las herramientas CASE}
+
+La historia de las herramientas CASE comienza a principios de los 70's con el procesador de palabras que se usaba en la creación de documentos. El desarrollo se centró inicialmente en herramientas de soporte de programas como traductores, compiladores, ensambladores y procesadores de macros \cite{Wayne}. Dado que la tecnología avanzó y el software se volvió más complejo, el tamaño para el soporte también tuvo que crecer. Ahora se desarrollaban herramientas para diagramas (como los diagramas Entidad-Relación y diagramas de flujo), editores de programas, depuradores, analizadores de código y utilidades de impresión, como los generadores de reportes y documentación.
+Los desarrollos en el área de las herramientas CASE entre 1980 y 1990 tuvieron un enfoque hacia las herramientas que buscaban dar respuestas a los problemas en los sistemas de desarrollo. Esto dió inicio a la elaboración de los siguientes productos de herramientas CASE:
+
+\begin{itemize}
+  \item Desarrollo Orientado a Objetos: Éstas ayudan a crear código reutilizable que pueda ser utilizado en diferentes lenguajes y plataformas. Con el gran crecimiento de desarrollos actual, este tipo de herramientas continúa incrementándose.
+  \item Herramientas de desarrollo Visual: Estas herramientas permiten al desarrollador construir rápidamente interfaces de usuario, reportes y otras características de los sistemas, lo que hace posible que puedan ver los resultados de su trabajo en un instante, un ejemplo de estas herramientas son los lenguajes de programación visuales como Borland C++ Builder, Visual C++, entre otros.
+\end{itemize}
+Las actuales líneas de evolución de las herramientas CASE de acuerdo \cite{Stobart96} son:
+
+\begin{itemize}
+  \item Herramientas para sistemas bajo arquitectura cliente/servidor. Versiones que faciliten la distribución de los elementos de una aplicación entre los diferentes clientes y servidores.
+  \item CASE multiplataforma. Herramientas que soportan combinaciones de diferentes plataformas físicas, sistemas operativos, interfaces gráficas de usuario, sistemas de gestión de bases de datos, lenguajes de programación y protocolos de red.
+  \item CASE para ingeniería inversa y directa. Ya existen algunas herramientas de este tipo como IBM Rational Rose. Su evolución serán mejoras en la obtención de los diseños a partir del código ya existente (ingeniería inversa) y la regeneración del mismo (ingeniería directa).
+  \item CASE para trabajo en grupo (groupware). Herramientas que se centran en el proceso de desarrollo más que en el producto a desarrollar.
+  \item CASE para desarrollo de sistemas Orientados a Objetos. Casi todas las herramientas existentes cubren alguna de las fases del ciclo de vida de desarrollo de aplicaciones orientadas a objetos, ya sea la interfaz del usuario, análisis, diseño, programación, etc. Ahora el objetivo es cubrir el ciclo de vida completo.
+\end{itemize}
+
+La historia de las herramientas de software se resume en \ref{case}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{figs/case}
+  \caption{Historia de las Herramientas CASE}\label{case}
+\end{figure}
+
+\subsection{Tipos de CASE}
+
+Según \ac{ONGEI} no existe una única clasificación de herramientas CASE y, en ocasiones, es difícil incluirlas en una clase determinada. Podrían clasificarse atendiendo a:
+
+\begin{itemize}
+  \item Las plataformas que soportan.
+  \item Las fases del ciclo de vida del desarrollo de sistemas que cubren.
+  \item La arquitectura de las aplicaciones que producen.
+  \item Su funcionalidad.
+\end{itemize}
+
+Además según \ac{ONGEI} en función de las fases del ciclo de vida abarcadas,las herramientas CASE se pueden agrupar de la forma siguiente:
+
+\begin{itemize}
+  \item Herramientas integradas, I-CASE (Integrated CASE, CASE integrado): abarcan todas las fases del ciclo de vida del desarrollo de sistemas. Son llamadas también CASE workbench.
+  \item Herramienta(s) que comprende(n) alguna(s) fase(s) del ciclo de vida de desarrollo de software:
+  \item Herramientas de alto nivel, U-CASE (Upper CASE - CASE superior) o front-end, orientadas a la automatización y soporte de las actividades desarrolladas durante las primeras fases del desarrollo: análisis y diseño.
+  \item Herramientas de bajo nivel, L-CASE (Lower CASE - CASE inferior) o back-end, dirigidas a las últimas fases del desarrollo: construcción e implantación.
+  \item Juegos de herramientas o toolkits, son el tipo más simple de herramientas CASE. Automatizan una fase dentro del ciclo de vida. Dentro de este grupo se encontrarían las herramientas de reingeniería, orientadas a la fase de mantenimiento.
+\end{itemize}
+
+Además según \cite{ONGEI} se puede concluir el siguiente cuadro: \ref{tipoCase}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{figs/tipoCase}
+  \caption{Tipos de Case}\label{tipoCase}
+\end{figure}
+
+\section{El Lenguaje de Modelado Unificado}
+
+\subsection{Introducción}
+La Ingeniería del Software ha tratado con el paso del tiempo simplificar cada vez más las complejidades que presentan el análisis y diseño de sistemas de software. Para atacar un problema muy grande es bien sabido que se hace uso de la descomposición, para el caso de la Ingeniería del Software se puede hacer una descomposición ya sea algorítmica
+u Orientada a Objetos, dónde esta última es la de más tendencia actualmente.
+
+Debido a esta problemática los investigadores de la Ingeniería del Software han desarrollado diversas metodologías Orientadas a Objetos con la finalidad de proporcionar un soporte para los desarrolladores de sistemas para analizar y diseñar con más precisión los sistemas. Martin Fowler afirma que actualmente el \ac{UML} es considerado por muchos autores incluyendo a sus creadores James Rumbaugh, Ivar Jacobson y Grady Booch como el lenguaje que unifica los métodos de Análisis y Diseño Orientados a Objetos. \cite{Fowler99}.
+\subsubsection{Qué es el UML}
+El \ac{UML} es un lenguaje de modelado gráfico y visual utilizado para especificar, visualizar, construir y documentar los componentes de un sistema de software. Está pensado para poder aplicarse en cualquier medio de aplicación que necesite capturar requerimientos y comportamientos del sistema que se desee construir. Ayuda a comprender y a mantener de una mejor forma un sistema basado en un área que el analista o desarrollador puede desconocer.
+
+El UML permite captar información sobre la estructura estática y dinámica de un sistema, en donde la estructura estática proporciona información sobre los objetos que intervienen en determinado proceso y las relaciones que existen entre de ellos, y la estructura dinámica define el comportamiento de los objetos a lo largo de todo el tiempo que estos interactúan hasta llegar a su o sus objetivos. \cite{Rumbaugh00}
+
+Una característica sobresaliente del UML es que no es un método, sino un lenguaje de modelado. Un método define su notación (lenguaje) y su proceso a seguir durante el ciclo de vida de desarrollo del software. El UML sólo define la notación gráfica y su significado, a partir de la cual se crearán los diseños de sistemas y no depende de un proceso, el cual sería el encargado de orientar los pasos a seguir para elaborar el diseño \cite{Fowler99}.
+La idea de usar los diagramas creados mediante el UML es simplemente para mejorar la comunicación, porque ayuda a que los desarrolladores de software se comuniquen con un mismo lenguaje de modelado independiente de las metodologías empleadas \cite{Fowler99}.
+La ventaja principal del UML \cite{Coleman97} sobre otras notaciones OO es que elimina las diferencias entre semánticas y notaciones.
+\subsubsection{Antecedentes del UML}
+Antes que el UML, hubo muchos intentos por unificar métodos, el más conocido que se señala en \cite{Rumbaugh00} es el caso de Fusion por Coleman y sus colegas que incluyó conceptos de los métodos OMT y Booch , pero como los autores de estos últimos no estaban involucrados en la unificación fue tomado como otro método más.
+El primer acercamiento a UML fue en 1994 cuando se da la noticia de que Jim Rumbaugh se une con Grady Booch en Rational Software Corporation con la finalidad de unificar sus métodos OMT y Booch respectivamente.
+En 1995 salió a luz la primera propuesta de su método integrado que fue la versión 0.8 del entonces llamado Método Unificado (Unified Method ). En ese mismo año Ivar Jacobson se une a Rational para trabajar con Booch y Rumbaugh en el proceso de unificación, a partir de aquí a estos tres personajes se les conoce como "Los tres amigos".
+
+En 1996, los tres amigos concluyen su trabajo y lo nombran UML, es entonces cuando el OMG decide convocar a otras compañías a participar con sus propuestas para mejorar el enfoque estándar que el UML pretendía.
+
+En enero de 1997, todas las propuestas de las empresas – entre las que figuran IBM, Oracle y Rational Software – se unieron en la versión 1.0 del UML que fue presentada ante el OMG para su consideración como estándar. Y finalmente en Noviembre de 1997 el UML fue adoptado por el OMG y otras organizaciones afines como lenguaje de modelado estándar.
+En diciembre de 2002 IBM adquirió las acciones de Rational Software Corporation.
+
+\subsubsection{Conceptos básicos}
+
+Como ya se ha mencionado, el \ac{UML} no es un método sino un lenguaje, el cual define únicamente una notación y un metamodelo  \cite{Fowler99}. El UML al ser un lenguaje estándar no depende de un proceso de desarrollo, y esto es precisamente lo que se quería al lograr unificar los métodos, que se tuviera un lenguaje en común entre los diferentes métodos, para que el desarrollador tuviera la libertad de escoger la metodología de su agrado. Con esto los desarrolladores implicados en un proyecto pueden tener la seguridad de que estarán creando diseños de software bajo un lenguaje que será comprendido por todos aquellos que utilicen el \ac{UML}.
+
+La notación en el UML son los componentes gráficos que se utilizan para crear los metamodelos, es decir, es la sintaxis del lenguaje de modelado \cite{Fowler99}. Para el caso de los diagramas de clase, la notación es la forma en cómo se dibuja una clase, la asociación, la multiplicidad, la agregación, etc.
+
+
+Un metamodelo o modelo, es la representación de algo en cierta forma, para el caso de la Ingeniería del Software un modelo es un diagrama que representa la definición de la notación.\cite{Fowler99}
+
+\subsection{Las vistas de UML}
+
+Las vistas de UML se refieren a la forma en que se modela una parte del sistema a desarrollar. Los autores del \ac{UML} proponen una clasificación de los diagramas que proporcionan las vistas de \ac{UML}, y aunque pareciera que esta clasificación es algo intuitiva, aclaran que es simplemente una propuesta y que cada desarrollador puede crear su propia clasificación \cite{Schmuller00}. Se muestra la tabla \ref{umlVistas}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{figs/umlVistas}
+  \caption{Clasificación de vistas y diagramas de UML}\label{umlVistas}
+\end{figure}
+
+La vista estática es la representación de los elementos del sistema y sus relaciones, la vista dinámica muestra la especificación y la implementación del comportamiento a lo largo del tiempo, es decir muestran el cambio progresivo de los objetos \cite{Rumbaugh00}.
+
+\subsubsection{ Diagramas de Caso de Uso}
+Según \cite{Rumbaugh00} La vista que proporcionan los diagramas de casos de uso, modela la forma en cómo un actor interactúa con el sistema, es decir, describe una interacción entre uno o más actores y el sistema o subsistemas como una secuencia de mensajes que llevan una forma, tipo y orden. El propósito de esta vista es enumerar a los actores y los casos de uso, mostrando un comportamiento y determinar qué actores participan en cada caso de uso.
+
+La vista de casos de uso es útil para tener una forma de comunicarse con los usuarios finales del sistema, ya que da una visión de cómo ellos esperan que el sistema se comporte.
+Un diagrama de casos de uso es una descripción lógica de una parte funcional del sistema y no del sistema en su totalidad. Este diagrama consta de elementos estructurales y relaciones.
+\subsubsection{Elementos Estructurales} : Según \cite{Rumbaugh00} y \cite{Schmuller00} los elementos estructurales representan las partes físicas o conceptuales de un modelo. La tabla \ref{casoUsoEstructura} muestra estos elementos.
+\begin{table}
+  \centering
+  \includegraphics[width=10cm]{figs/casoUsoEstructura}
+  \caption{Elementos estructurales de un caso de uso}\label{casoUsoEstructura}
+\end{table}
+
+\subsubsection{Relaciones} : Según \cite{Rumbaugh00} y \cite{Schmuller00} las relaciones conectan a los elementos estructurales para darles sentido al diagrama de casos de uso. La tabla \ref{casoUsoRelacion} muestra estas relaciones.
+\begin{table}
+  \centering
+  \includegraphics[width=10cm]{figs/casoUsoRelacion}
+  \caption{Relaciones dentro de un caso de uso}\label{casoUsoRelacion}
+\end{table}
+
+\subsection{Diagrama de Clases}
+
+Según \cite{Rumbaugh00} y \cite{Schmuller00} la vista de los diagramas de clase, visualiza las relaciones entre las clases que se involucran en el sistema. Un diagrama de clases muestra un conjunto de clases, interfaces y colaboraciones y las relaciones entre éstas, mostrando así, la estructura estática de un sistema. Los diagramas de clase pueden mostrar:
+
+\begin{itemize}
+  \item Clases
+  \item Atributos
+  \item Operaciones
+  \item Asociaciones
+  \item Generalizaciones
+  \item Agregaciones
+  \item Composiciones
+\end{itemize}
+Un diagrama de clases esta compuesto por los elementos mostrados en las tablas \ref{clase1} y \ref{clase2}.
+
+\begin{table}
+  \centering
+  \includegraphics[width=10cm]{figs/clase1}
+  \caption{Relaciones dentro de un caso de uso}\label{clase1}
+\end{table}
+\begin{table}
+  \centering
+  \includegraphics[width=10cm]{figs/clase2}
+  \caption{Relaciones dentro de un caso de uso}\label{clase2}
+\end{table}
+
+
+\section{Patrón DAO}
+Según \cite{Gamma03}, "cada patrón describe un problema que ocurre una y otra vez en nuestro entorno, así como solución a ese problema,de tal modo que se pueda aplicar esta solución un millón de veces, sin hacer lo mismo dos veces"
+En general un patrón tiene cuatro elementos esenciales:
+\begin{itemize}
+  \item EL nombre del patrón que permite describir, en una o dos palabras, un problema de diseño junt con sus soluciones y consecuencias.
+  \item El problema Describe cuando aplicar el patrón. Explica el problema y su context. Puede describir problemas concretos de diseño así como las estructuras de clases u objetos que son sintomáticas de un diseño inflexible. A veces el problema incluye una serie de condiciones que deben darse para que tenga sentido aplicar el patrón
+  \item La solución, que describe los elementos que constituyen el diseño, sus relaciones, responsabilidades y colaboraciones.
+  \item Las consecuencias son los resultados así como las ventajase inconvenientes de aplicar el patrón.
+\end{itemize}
+
+Según \cite{Gamma03}, es bastante normal hacer aplicaciones que almacenan y recogen datos de una base de datos. Suele ser habitual, también, querer hacer nuestra aplicación lo más independiente posible de una base de datos concreta, de cómo se accede a los datos o incluso de si hay o no base de datos detrás. Nuestra aplicación debe conseguir los datos o ser capaz de guardarlos en algún sitio, pero no tiene por qué saber de dónde los está sacando o dónde se guardan.
+Hay una forma de hacer esto que ha resultado bastante eficiente en el mundo JEE y de aplicaciones web, pero que es aplicable a cualquier tipo de aplicación que deba recoger datos de algún sitio y almacenarlos. Es lo que se conoce como patrón DAO (Data Access Object).
+La idea de este patrón es sencilla. En primer lugar, debemos hacernos las clases que representan nuestros datos. Por ejemplo, podemos hacer una clase Persona con los datos de la persona y los métodos set() y get() correspondientes.
+Luego hacemos una interface. Esta interface tiene que tener los métodos necesarios para obtener y almacenar Personas. Esta interface no debe tener nada que la relaciones con una base de datos ni cualquier otra cosa específica del medio de almacenamiento que vayamos a usar, es decir, ningún parámetro debería ser una Connection, ni un nombre de fichero, etc.
+
